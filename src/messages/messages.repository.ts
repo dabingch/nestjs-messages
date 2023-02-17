@@ -8,7 +8,7 @@ export class MessagesRepository {
     return messages[id];
   }
 
-  async findALl() {
+  async findAll() {
     const contents = await readFile('messages.json', 'utf-8');
     const messages = JSON.parse(contents);
 
